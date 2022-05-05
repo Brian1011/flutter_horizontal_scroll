@@ -17,7 +17,11 @@ class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
       body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           child: ListView(
-            children: const [_Card(backgroundColor: Colors.blue)],
+            children: const [
+              _Card(backgroundColor: Colors.blue),
+              _Card(backgroundColor: Colors.red),
+              _Card(backgroundColor: Colors.green),
+            ],
           )),
     );
   }
@@ -30,6 +34,7 @@ class _Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
       width: 100,
       height: 200,
       color: backgroundColor,
