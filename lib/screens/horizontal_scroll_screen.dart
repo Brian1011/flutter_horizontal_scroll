@@ -17,10 +17,12 @@ class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
       body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           child: ListView(
+            // defaults scroll vertically
             children: const [
               _Card(backgroundColor: Colors.blue),
               _Card(backgroundColor: Colors.red),
               _Card(backgroundColor: Colors.green),
+              _Card(backgroundColor: Colors.black),
             ],
           )),
     );
@@ -28,6 +30,7 @@ class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
 }
 
 class _Card extends StatelessWidget {
+  // background color
   final Color backgroundColor;
   const _Card({required this.backgroundColor, Key? key}) : super(key: key);
 
@@ -35,7 +38,7 @@ class _Card extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 5),
-      width: 100,
+      width: 200,
       height: 200,
       color: backgroundColor,
     );
