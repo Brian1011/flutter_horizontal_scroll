@@ -21,3 +21,17 @@ class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
     );
   }
 }
+
+class _Card extends StatelessWidget {
+  final Color backgroundColor;
+  const _Card({required this.backgroundColor, Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 100,
+      height: 200,
+      color: backgroundColor,
+    );
+  }
+}
