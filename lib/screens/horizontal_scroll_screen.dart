@@ -10,6 +10,14 @@ class HorizontalScrollScreen extends StatefulWidget {
 class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Horizontal Scroll"),
+      ),
+      body: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+        child: const Text("Home"),
+      ),
+    );
   }
 }
