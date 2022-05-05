@@ -15,9 +15,10 @@ class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
         title: const Text("Horizontal Scroll"),
       ),
       body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-        child: const Text("Home"),
-      ),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          child: ListView(
+            children: const [_Card(backgroundColor: Colors.blue)],
+          )),
     );
   }
 }
