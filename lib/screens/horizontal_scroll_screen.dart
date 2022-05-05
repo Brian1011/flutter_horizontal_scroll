@@ -16,8 +16,10 @@ class _HorizontalScrollScreenState extends State<HorizontalScrollScreen> {
       ),
       body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          height: 200,
           child: ListView(
             // defaults scroll vertically
+            scrollDirection: Axis.horizontal,
             children: const [
               _Card(backgroundColor: Colors.blue),
               _Card(backgroundColor: Colors.red),
